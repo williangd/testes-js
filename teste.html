@@ -1,14 +1,14 @@
 <html>
 
 <head>
-	<title>My Angular App</title>
+	<title>Calculadora</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 </head>
 
 <body>
 
 <script src= "calculator.js"></script>
- 
+
 <div ng-app="CalculatorApp" ng-controller="CalculatorController">
   <p><input type="number" ng-model="a"></p>
   <p><input type="number" ng-model="b"></p>
@@ -18,10 +18,9 @@
         <option>-</option>
         <option>/</option>
      </select></p>
-  <p>{{ result() }}</p>
-  <p>{{ a | number:2 }}</p>
+  <p>Resultado: {{ result() }}</p>
  </div>
 
 </body>
- 
+
  </html>
